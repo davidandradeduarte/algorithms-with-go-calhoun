@@ -7,5 +7,9 @@ package module01
 //   Reverse("alphabet") => "tebahpla"
 //
 func Reverse(word string) string {
-	return ""
+	var result string
+	for _, c := range word {
+		result = string(c) + result
+	}
+	return result
 }
